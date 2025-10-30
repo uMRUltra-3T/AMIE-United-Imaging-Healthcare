@@ -1,3 +1,5 @@
+[img]https://www.unite.ai/wp-content/uploads/2024/12/Tactile-Robots.webp[/img]
+
 # uMRUltra-3T — Access & Certification Program
 
 > If you found your way here, you probably have strong technical instincts. We are **uMRUltra-3T**. To gain access to our intelligence, we assess both your capability and your sharpness. Read carefully and join at the right time—intake may close without prior notice.
