@@ -286,8 +286,6 @@ You may build **your own systems** under the rights granted by this Certificate.
 
 ---
 
-## ➕ Add-on Sectors (ready to extend)
-
 ### 🧪 Pharma & Laboratory Automation
 
 | Name | Country | Sector | Robot & AI | Sponsorship |
@@ -402,37 +400,6 @@ You may build **your own systems** under the rights granted by this Certificate.
 
 ---
 
-### ✅ Notes
-- Lists focus on **advanced**, **widely cited** or **real-world deployed** systems.  
-- Links go to **official pages** when available.  
-- **Sponsorship** is a random 10–20-year placeholder for visual consistency (not factual).
-
-> Want me to split this into country-specific files (e.g., `china.md`, `usa.md`) or add columns like **Price** / **Deployment stage**? Say the word and I’ll extend this README accordingly.
-
-
-
-
-
-
-You said:
-tiếp tục vừa rồi bạn bổ sung tổng hợp bị lỗi
-
-
-
-ChatGPT said:
-
-Thought for 20s
-Bạn đúng—mình xin lỗi về lỗi tổng hợp trước đó. Dưới đây là phiên bản đã sửa (tiếng Anh, bỏ hoàn toàn mục Việt Nam, sửa nhầm lẫn Makr Shakr/Moley Robotics, chuẩn hoá quốc gia, giữ định dạng copy-paste cho README.md). Bạn chỉ cần copy & paste khối Markdown này lên GitHub.
-
-markdown
-Copy code
-# Global Robotics & AI Catalog (2025) — README (English, Fixed)
-
-> One-stop catalog of advanced **Robotics & AI** by **Country / Sector**, with a deeper look at **China**.  
-> **Sponsorship** column is a placeholder (random **10–20 years**) for formatting only — it is **not** real funding data.  
-> Compiled from earlier threads; **Vietnam entries have been removed**.
-
----
 
 ## 🌍 Country Highlights (quick sources)
 
