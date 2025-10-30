@@ -1,4 +1,4 @@
-![screenshot](https://www.unite.ai/wp-content/uploads/2024/12/Tactile-Robots.webp)
+![screenshot](https://github.com/jingyaogong/minimind/blob/master/images/minimind2.gif)
 
 # uMRUltra-3T — Access & Certification Program
 
