@@ -695,8 +695,8 @@ You may build **your own systems** under the rights granted by this Certificate.
 - **Next Steps:** Prepare prerequisites and submit your application.
 
 > For link-based submissions and announcements, replace the placeholders below with your official URLs:
-> - Application Form: `<YOUR_LINK_HERE>`
-> - Catalog Page (owners only): `<YOUR_LINK_HERE>`
-> - Symposium & Visits Info: `<YOUR_LINK_HERE>`
+> - Application Form: `<https://chatgpt.com/canvas/shared/6903f218622c8191976b4f79d2f3050b>`
+> - Catalog Page (owners only): `<Session>`
+> - Symposium & Visits Info: `<https://chatgpt.com/canvas/shared/6903f218622c8191976b4f79d2f3050b>`
 
 ---
