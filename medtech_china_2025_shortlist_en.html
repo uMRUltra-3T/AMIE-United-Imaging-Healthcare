@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>China Medtech 2025 – Companies & SaMD (English)</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b7280;
+    --brand: #0d6efd;
+    --soft: #eef2ff;
+    --border: #d1d5db;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  header.site-header { padding: 8px 0 12px; position: sticky; top: 0; background: rgba(255,255,255,0.9); backdrop-filter: blur(6px); z-index: 10; border-bottom: 1px solid var(--border);}
+  h1 { margin: 8px 0 6px; font-size: 1.6rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  .controls { display: grid; gap: 10px; grid-template-columns: 1fr; margin: 12px 0 16px; }
+  .controls .row { display: grid; gap: 10px; grid-template-columns: 1fr; }
+  input[type="search"], select, button {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: #fff; font-size: 1rem;
+  }
+  button.primary { background: var(--brand); color: #fff; border: none; }
+  .view-toggle { display: inline-flex; gap: 6px; }
+  .view-toggle button { flex: 1; }
+  /* Desktop table */
+  .data-table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); }
+  .data-table th, .data-table td { border-top: 1px solid var(--border); padding: 10px; vertical-align: top; }
+  .data-table th { background: var(--soft); text-align: left; }
+  .table-wrapper { display: none; overflow-x: auto; border-radius: 12px; }
+  /* Mobile cards */
+  #cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .card { border: 1px solid var(--border); border-radius: 14px; background: var(--card); padding: 12px; }
+  .card header { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .card h3 { margin: 0; font-size: 1.05rem; }
+  .segment { background: var(--soft); color: #1f3a8a; padding: 4px 8px; border-radius: 999px; font-size: 0.75rem; white-space: nowrap; }
+  .footer { color: var(--muted); font-size: 0.85rem; margin: 18px 0; }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; }
+  .links a { color: var(--brand); text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  @media (min-width: 900px) {
+    h1 { font-size: 2rem; }
+    .controls .row { grid-template-columns: 2fr 1fr 1fr auto; }
+    #cards { display: none; }
+    .table-wrapper { display: block; }
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>China Medtech 2025 – Companies &amp; SaMD</h1>
+      <div class="meta">Updated: 2025-10-30 • Focus: imaging &amp; AI diagnostics, surgical robotics, SaMD. All content in English. Mobile‑friendly.</div>
+      <div class="controls">
+        <div class="row">
+          <input id="search" type="search" placeholder="Search companies, approvals, modalities…" aria-label="Search">
+          <select id="segment">
+            <option value="">All segments</option>
+            <option value="AI SaMD – Cardiology">AI SaMD – Cardiology</option><option value="AI SaMD – Ophthalmology">AI SaMD – Ophthalmology</option><option value="AI SaMD – Radiology">AI SaMD – Radiology</option><option value="CT/MR Imaging">CT/MR Imaging</option><option value="Hospital AI/Data Platform">Hospital AI/Data Platform</option><option value="Imaging OEM + AI post‑processing">Imaging OEM + AI post‑processing</option><option value="Interventional Robotics (PCI)">Interventional Robotics (PCI)</option><option value="MRI / X‑ray">MRI / X‑ray</option><option value="Neurosurgical Robotics">Neurosurgical Robotics</option><option value="Orthopedic Robotics">Orthopedic Robotics</option><option value="Surgical Robotics">Surgical Robotics</option><option value="Ultrasound & Endoscopy">Ultrasound & Endoscopy</option><option value="Ultrasound & Patient Monitoring">Ultrasound & Patient Monitoring</option><option value="Ultrasound/Imaging">Ultrasound/Imaging</option><option value="X‑ray / C‑arm / DRF">X‑ray / C‑arm / DRF</option>
+          </select>
+          <select id="hq">
+            <option value="">All HQ</option>
+            <option value="China">China</option><option value="China/France JV">China/France JV</option>
+          </select>
+          <button id="clear" class="primary" type="button">Clear filters</button>
+        </div>
+        <div class="links">
+          <a href="medtech_china_2025_shortlist.csv" download>Download CSV</a> •
+          <a href="medtech_china_2025_shortlist.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Mobile card view -->
+    <section id="cards">
+        <article class="card" data-segment="Imaging OEM + AI post‑processing">
+            <header>
+                <h3>United Imaging Healthcare (UIH)</h3>
+                <span class="segment">Imaging OEM + AI post‑processing</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> uMR Ultra 3T MRI; uOmnispace.CT; uCT ATLAS dual‑energy</p>
+                <p><strong>2024–2025 approvals / notes:</strong> NMPA approval 2025‑09‑29; FDA K242624 (uOmnispace.CT), K243617 (uCT ATLAS)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Ultrasound/Imaging">
+            <header>
+                <h3>Mindray</h3>
+                <span class="segment">Ultrasound/Imaging</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> ViewMate Multi ICE; Mindray ultrasound portfolio</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA K251250 (ViewMate Multi ICE); K251192; K250110 (2025)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Ultrasound & Endoscopy">
+            <header>
+                <h3>SonoScape</h3>
+                <span class="segment">Ultrasound & Endoscopy</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> P60 Series ultrasound; HD‑550 video endoscopy system</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA K241949 (2025, ultrasound); FDA 510(k) for HD‑550 (2022)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="CT/MR Imaging">
+            <header>
+                <h3>Neusoft Medical Systems</h3>
+                <span class="segment">CT/MR Imaging</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> NeuViz CT family</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA K230220 (NeuViz 128, 2023) and prior 510(k)s</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="X‑ray / C‑arm / DRF">
+            <header>
+                <h3>Perlove Medical</h3>
+                <span class="segment">X‑ray / C‑arm / DRF</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> PLX119C integrated C‑arm (large FPD)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA 510(k) clearance 2025‑06‑06; K243411 (2025)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="MRI / X‑ray">
+            <header>
+                <h3>Beijing Wandong (WDM)</h3>
+                <span class="segment">MRI / X‑ray</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> i_Field 1.5T MRI; i_OPEN series</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA K221025 (2022); prior K090433 (0.4T)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Surgical Robotics">
+            <header>
+                <h3>MicroPort MedBot (Toumai)</h3>
+                <span class="segment">Surgical Robotics</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> Toumai robotic system; telesurgery program</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA‑IDE approved transcontinental telesurgery 2025‑07‑04; LEO satellite remote surgery 2025‑07‑07; 100+ orders milestone 2025‑10‑09</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Orthopedic Robotics">
+            <header>
+                <h3>TINAVI (TiRobot)</h3>
+                <span class="segment">Orthopedic Robotics</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> TiRobot II</p>
+                <p><strong>2024–2025 approvals / notes:</strong> CSA certificate (North America) 2021; extensive clinical use in China</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Neurosurgical Robotics">
+            <header>
+                <h3>Remebot (Beijing Baihui Weikang)</h3>
+                <span class="segment">Neurosurgical Robotics</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> Oral surgery robot; RM‑50 for ICH</p>
+                <p><strong>2024–2025 approvals / notes:</strong> NMPA approvals (oral robot first in field; RM‑50 ICH robot)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Interventional Robotics (PCI)">
+            <header>
+                <h3>Robocath x MedBot (Cathbot JV)</h3>
+                <span class="segment">Interventional Robotics (PCI)</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> R‑One robotic PCI platform (Cathbot JV)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> NMPA approval for R‑One in China (2024‑01‑09)</p>
+                <p><strong>HQ:</strong> China/France JV</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Radiology">
+            <header>
+                <h3>Infervision</h3>
+                <span class="segment">AI SaMD – Radiology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> InferRead Lung CT.AI</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA 510(k) K240554 (2024); enhanced features cleared 2025‑05‑30</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Cardiology">
+            <header>
+                <h3>Keya Medical</h3>
+                <span class="segment">AI SaMD – Cardiology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> DEEPVESSEL® FFR (CT‑derived FFR)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA 510(k) K213657 (2022)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Cardiology">
+            <header>
+                <h3>Pulse Medical</h3>
+                <span class="segment">AI SaMD – Cardiology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> μQFR AngioPlus Core (angio‑derived FFR/QFR)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA Breakthrough Device (2023); strong clinical literature</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Ophthalmology">
+            <header>
+                <h3>Airdoc</h3>
+                <span class="segment">AI SaMD – Ophthalmology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> AIFUNDUS (retinal AI, Class III)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> First NMPA Class III AI retina product in China; 2024–2025 filings confirm status</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Cardiology">
+            <header>
+                <h3>Shukun Technology</h3>
+                <span class="segment">AI SaMD – Cardiology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> CT‑FFR automated assessment</p>
+                <p><strong>2024–2025 approvals / notes:</strong> NMPA approval 2023‑02‑07</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="AI SaMD – Radiology">
+            <header>
+                <h3>Huiying Medical (HY Medical)</h3>
+                <span class="segment">AI SaMD – Radiology</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> AI chest CT/X‑ray suite; global deployments</p>
+                <p><strong>2024–2025 approvals / notes:</strong> International deployments; partnerships in EU; (no FDA claim here)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Ultrasound & Patient Monitoring">
+            <header>
+                <h3>EDAN Instruments</h3>
+                <span class="segment">Ultrasound & Patient Monitoring</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> Acclarix AX8/AX9; Patient Monitors (CX/UX series)</p>
+                <p><strong>2024–2025 approvals / notes:</strong> FDA K250214 (2025 ultrasound); K250179 (2025 patient monitor)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        
+
+        <article class="card" data-segment="Hospital AI/Data Platform">
+            <header>
+                <h3>Yidu Tech</h3>
+                <span class="segment">Hospital AI/Data Platform</span>
+            </header>
+            <div class="card-body">
+                <p><strong>Flagship / Focus:</strong> AI Middleware 2.0; EYWA 5.0 hospital data center; AI agents</p>
+                <p><strong>2024–2025 approvals / notes:</strong> CHIMA 2025 upgrades; deployed across Grade III‑A hospitals; national AI pilot base partner (2025)</p>
+                <p><strong>HQ:</strong> China</p>
+            </div>
+        </article>
+        </section>
+
+    <!-- Desktop table view -->
+    <div class="table-wrapper">
+      <table class="data-table"><thead><tr><th>Company</th><th>Segment</th><th>Flagship / Focus</th><th>2024–2025 approvals / notes</th><th>HQ</th></tr></thead><tbody><tr><td data-label="Company">United Imaging Healthcare (UIH)</td><td data-label="Segment">Imaging OEM + AI post‑processing</td><td data-label="Flagship / Focus">uMR Ultra 3T MRI; uOmnispace.CT; uCT ATLAS dual‑energy</td><td data-label="2024–2025 approvals / notes">NMPA approval 2025‑09‑29; FDA K242624 (uOmnispace.CT), K243617 (uCT ATLAS)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Mindray</td><td data-label="Segment">Ultrasound/Imaging</td><td data-label="Flagship / Focus">ViewMate Multi ICE; Mindray ultrasound portfolio</td><td data-label="2024–2025 approvals / notes">FDA K251250 (ViewMate Multi ICE); K251192; K250110 (2025)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">SonoScape</td><td data-label="Segment">Ultrasound & Endoscopy</td><td data-label="Flagship / Focus">P60 Series ultrasound; HD‑550 video endoscopy system</td><td data-label="2024–2025 approvals / notes">FDA K241949 (2025, ultrasound); FDA 510(k) for HD‑550 (2022)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Neusoft Medical Systems</td><td data-label="Segment">CT/MR Imaging</td><td data-label="Flagship / Focus">NeuViz CT family</td><td data-label="2024–2025 approvals / notes">FDA K230220 (NeuViz 128, 2023) and prior 510(k)s</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Perlove Medical</td><td data-label="Segment">X‑ray / C‑arm / DRF</td><td data-label="Flagship / Focus">PLX119C integrated C‑arm (large FPD)</td><td data-label="2024–2025 approvals / notes">FDA 510(k) clearance 2025‑06‑06; K243411 (2025)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Beijing Wandong (WDM)</td><td data-label="Segment">MRI / X‑ray</td><td data-label="Flagship / Focus">i_Field 1.5T MRI; i_OPEN series</td><td data-label="2024–2025 approvals / notes">FDA K221025 (2022); prior K090433 (0.4T)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">MicroPort MedBot (Toumai)</td><td data-label="Segment">Surgical Robotics</td><td data-label="Flagship / Focus">Toumai robotic system; telesurgery program</td><td data-label="2024–2025 approvals / notes">FDA‑IDE approved transcontinental telesurgery 2025‑07‑04; LEO satellite remote surgery 2025‑07‑07; 100+ orders milestone 2025‑10‑09</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">TINAVI (TiRobot)</td><td data-label="Segment">Orthopedic Robotics</td><td data-label="Flagship / Focus">TiRobot II</td><td data-label="2024–2025 approvals / notes">CSA certificate (North America) 2021; extensive clinical use in China</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Remebot (Beijing Baihui Weikang)</td><td data-label="Segment">Neurosurgical Robotics</td><td data-label="Flagship / Focus">Oral surgery robot; RM‑50 for ICH</td><td data-label="2024–2025 approvals / notes">NMPA approvals (oral robot first in field; RM‑50 ICH robot)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Robocath x MedBot (Cathbot JV)</td><td data-label="Segment">Interventional Robotics (PCI)</td><td data-label="Flagship / Focus">R‑One robotic PCI platform (Cathbot JV)</td><td data-label="2024–2025 approvals / notes">NMPA approval for R‑One in China (2024‑01‑09)</td><td data-label="HQ">China/France JV</td></tr><tr><td data-label="Company">Infervision</td><td data-label="Segment">AI SaMD – Radiology</td><td data-label="Flagship / Focus">InferRead Lung CT.AI</td><td data-label="2024–2025 approvals / notes">FDA 510(k) K240554 (2024); enhanced features cleared 2025‑05‑30</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Keya Medical</td><td data-label="Segment">AI SaMD – Cardiology</td><td data-label="Flagship / Focus">DEEPVESSEL® FFR (CT‑derived FFR)</td><td data-label="2024–2025 approvals / notes">FDA 510(k) K213657 (2022)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Pulse Medical</td><td data-label="Segment">AI SaMD – Cardiology</td><td data-label="Flagship / Focus">μQFR AngioPlus Core (angio‑derived FFR/QFR)</td><td data-label="2024–2025 approvals / notes">FDA Breakthrough Device (2023); strong clinical literature</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Airdoc</td><td data-label="Segment">AI SaMD – Ophthalmology</td><td data-label="Flagship / Focus">AIFUNDUS (retinal AI, Class III)</td><td data-label="2024–2025 approvals / notes">First NMPA Class III AI retina product in China; 2024–2025 filings confirm status</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Shukun Technology</td><td data-label="Segment">AI SaMD – Cardiology</td><td data-label="Flagship / Focus">CT‑FFR automated assessment</td><td data-label="2024–2025 approvals / notes">NMPA approval 2023‑02‑07</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Huiying Medical (HY Medical)</td><td data-label="Segment">AI SaMD – Radiology</td><td data-label="Flagship / Focus">AI chest CT/X‑ray suite; global deployments</td><td data-label="2024–2025 approvals / notes">International deployments; partnerships in EU; (no FDA claim here)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">EDAN Instruments</td><td data-label="Segment">Ultrasound & Patient Monitoring</td><td data-label="Flagship / Focus">Acclarix AX8/AX9; Patient Monitors (CX/UX series)</td><td data-label="2024–2025 approvals / notes">FDA K250214 (2025 ultrasound); K250179 (2025 patient monitor)</td><td data-label="HQ">China</td></tr><tr><td data-label="Company">Yidu Tech</td><td data-label="Segment">Hospital AI/Data Platform</td><td data-label="Flagship / Focus">AI Middleware 2.0; EYWA 5.0 hospital data center; AI agents</td><td data-label="2024–2025 approvals / notes">CHIMA 2025 upgrades; deployed across Grade III‑A hospitals; national AI pilot base partner (2025)</td><td data-label="HQ">China</td></tr></tbody></table>
+    </div>
+
+    <div class="footer">
+      Sources: FDA 510(k) Database, FDA AI Device List, NMPA, manufacturer press releases (summarized).<br>
+      Tip: Use the search box to filter by model names (e.g., "uMR Ultra", "Toumai", "InferRead").
+    </div>
+  </main>
+
+<script>
+(function() {
+  const q = document.getElementById('search');
+  const seg = document.getElementById('segment');
+  const hq = document.getElementById('hq');
+  const clearBtn = document.getElementById('clear');
+  const table = document.querySelector('.data-table tbody');
+  const rows = Array.from(table.querySelectorAll('tr'));
+  const cards = Array.from(document.querySelectorAll('#cards .card'));
+
+  function matchRow(text, segmentVal, hqVal, rowEl) {
+    const content = rowEl.textContent.toLowerCase();
+    const okText = !text || content.includes(text);
+    const okSeg = !segmentVal || content.includes(segmentVal.toLowerCase());
+    const okHq = !hqVal || content.includes(hqVal.toLowerCase());
+    return okText && okSeg && okHq;
+  }
+
+  function filter() {
+    const text = q.value.trim().toLowerCase();
+    const segmentVal = seg.value;
+    const hqVal = hq.value;
+
+    rows.forEach(tr => {
+      tr.style.display = matchRow(text, segmentVal, hqVal, tr) ? '' : 'none';
+    });
+    cards.forEach(card => {
+      const content = card.textContent.toLowerCase();
+      const okText = !text || content.includes(text);
+      const okSeg = !segmentVal || (card.getAttribute('data-segment') || '').toLowerCase() === segmentVal.toLowerCase() || content.includes(segmentVal.toLowerCase());
+      const okHq = !hqVal || content.includes(hqVal.toLowerCase());
+      card.style.display = (okText && okSeg && okHq) ? '' : 'none';
+    });
+  }
+
+  q.addEventListener('input', filter);
+  seg.addEventListener('change', filter);
+  hq.addEventListener('change', filter);
+  clearBtn.addEventListener('click', () => {
+    q.value = ''; seg.value = ''; hq.value = ''; filter();
+  });
+})();
+</script>
+
+</body>
+</html>

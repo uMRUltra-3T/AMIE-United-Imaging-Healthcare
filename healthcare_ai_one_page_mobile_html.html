@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Healthcare AI — Herbal/TCM & Dermatology (2025)</title>
+  <meta name="description" content="A mobile-first one-page briefing on Healthcare AI for Herbal/TCM and Dermatology: leaders, use-cases, deployment, and roadmap." />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1220;
+      --bg-soft: #0f172a; /* slate-900 */
+      --card: #0f1a2f;
+      --muted: #7a8aa0;
+      --text: #e6eef8;
+      --lead: #cfe3ff;
+      --brand: #66b3ff; /* primary */
+      --brand-2: #8ee3ff; /* secondary */
+      --accent: #a78bfa; /* violet-400 */
+      --ok: #22c55e; /* green-500 */
+      --warn: #f59e0b; /* amber-500 */
+      --danger: #ef4444; /* red-500 */
+      --surface: rgba(255,255,255,0.06);
+      --ring: rgba(102,179,255,0.6);
+      --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,0.04);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f6f8fb;
+        --bg-soft: #eef3fb;
+        --card: #ffffff;
+        --muted: #516173;
+        --text: #0e1726;
+        --lead: #0e1726;
+        --brand: #0ea5e9;
+        --brand-2: #22d3ee;
+        --accent: #7c3aed;
+        --surface: rgba(14,23,38,0.05);
+        --ring: rgba(14,165,233,0.35);
+        --shadow: 0 12px 28px rgba(16,24,40,0.08), 0 2px 6px rgba(16,24,40,0.04);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text); background: radial-gradient(1200px 600px at 20% -10%, rgba(102,179,255,.12), transparent 50%),
+      radial-gradient(1000px 480px at 120% 10%, rgba(167,139,250,.12), transparent 50%),
+      var(--bg);
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:1040px;margin:0 auto;padding:20px}
+    header.nav{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background:linear-gradient(to right, rgba(15,23,42,.55), rgba(15,23,42,.3));
+      border-bottom:1px solid rgba(255,255,255,.06)
+    }
+    @media (prefers-color-scheme: light){header.nav{background:rgba(255,255,255,.8);}}
+    .nav-inner{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .brand-badge{width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));box-shadow:var(--shadow)}
+    .nav-links{display:flex;gap:10px;flex-wrap:wrap}
+    .nav-links a{color:var(--text);text-decoration:none;font-size:13px;padding:8px 10px;border-radius:10px;background:transparent;border:1px solid transparent}
+    .nav-links a:hover{border-color:var(--surface);background:var(--surface)}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:14px;padding:26px 20px 10px}
+    @media(min-width:768px){.hero{grid-template-columns:1.2fr .8fr;align-items:center}}
+    .h1{font-size: clamp(22px, 4vw, 34px); line-height:1.15; margin:0; font-weight:800}
+    .lead{margin:10px 0 0;color:var(--lead);opacity:.95}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:linear-gradient(135deg,rgba(102,179,255,.18),rgba(167,139,250,.18));border:1px solid rgba(255,255,255,.12);
+      font-size:12px; font-weight:600
+    }
+    .chip svg{opacity:.9}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{appearance:none;border:1px solid transparent;padding:10px 14px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none;color:#0b1220;background:linear-gradient(135deg,var(--brand),var(--brand-2)); box-shadow:var(--shadow)}
+    .btn.secondary{background:transparent;color:var(--text);border-color:var(--surface)}
+    .btn.secondary:hover{background:var(--surface)}
+
+    .grid{display:grid;gap:14px}
+    @media(min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:1fr 1fr}}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02),rgba(255,255,255,.00)); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px; box-shadow:var(--shadow)}
+    @media (prefers-color-scheme: light){.card{background:var(--card); border:1px solid rgba(14,23,38,.08)}}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+
+    .section{padding:16px 0}
+    .section h2{font-size: clamp(18px, 3.2vw, 22px); margin:0 0 10px}
+    .kicker{color:var(--brand);text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:12px}
+
+    .table-wrap{overflow:auto;border-radius:12px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+    table{width:100%;border-collapse:separate;border-spacing:0;min-width:680px}
+    thead th{position:sticky;top:0;background:linear-gradient(0deg,rgba(255,255,255,.04),rgba(255,255,255,.06));backdrop-filter:blur(2px);font-size:12px;text-align:left;padding:12px;color:var(--brand)}
+    tbody td{padding:12px;border-top:1px solid rgba(255,255,255,.06);font-size:13px}
+    tbody tr:nth-child(even){background:rgba(255,255,255,.03)}
+    @media (prefers-color-scheme: light){thead th{background:#f2f6ff} tbody td{border-top:1px solid #edf2f7} tbody tr:nth-child(even){background:#fafcff}}
+
+    .badge{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.12);font-size:12px}
+    .badge.ok{border-color:rgba(34,197,94,.35);color:#22c55e}
+    .badge.warn{border-color:rgba(245,158,11,.35);color:#f59e0b}
+
+    details.accordion{border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00)); box-shadow:var(--shadow)}
+    details summary{cursor:pointer;list-style:none;padding:14px;font-weight:700}
+    details[open] summary{border-bottom:1px solid rgba(255,255,255,.08)}
+    details .content{padding:12px 14px;color:var(--muted)}
+
+    .code{
+      font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size:12.5px; background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:12px; overflow:auto; box-shadow:var(--shadow)
+    }
+
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(102,179,255,.08)}
+    .muted{color:var(--muted)}
+
+    footer{margin:30px 0 10px;color:var(--muted);font-size:12px;text-align:center}
+
+    /* Print for 1-page A4 */
+    @media print{
+      body{background:#fff;color:#000}
+      header.nav, .cta-row, .nav-links{display:none!important}
+      .container{max-width:100%;padding:0}
+      .section{page-break-inside:avoid}
+      .table-wrap{border-color:#bbb}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <span>Healthcare AI — 2025</span>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#clinical">Clinical & Pharma</a>
+        <a href="#tcm">Herbal / TCM</a>
+        <a href="#derm">Dermatology</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="overview">
+      <div>
+        <span class="chip" aria-label="Executive Brief">
+          <!-- Sparkle icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l2.2 4.8L19 10l-4.8 2.2L12 17l-2.2-4.8L5 10l4.8-2.2L12 3z" stroke="currentColor" stroke-width="1.6"/></svg>
+          Executive Brief
+        </span>
+        <h1 class="h1">One-Page: Healthcare AI — <span style="background:linear-gradient(90deg,var(--brand),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">Herbal/TCM & Dermatology</span></h1>
+        <p class="lead">Mobile-first briefing for clinical decision support, herbal/TCM safety, dermatology triage, and deployment in 2025.</p>
+        <div class="cta-row">
+          <a class="btn" href="#roadmap">Implementation Roadmap</a>
+          <button class="btn secondary" onclick="window.print()" title="Save as PDF">Save as PDF</button>
+        </div>
+      </div>
+      <div class="grid cols-1">
+        <div class="card">
+          <h3>Key Value</h3>
+          <p>Safer triage • Faster referrals • Personalized herbal care • Accelerated R&amp;D • Lower system cost</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+            <span class="pill">AMIE</span>
+            <span class="pill">Med-Gemini / MedLM</span>
+            <span class="pill">Hippocratic AI</span>
+            <span class="pill">AlphaFold 3</span>
+            <span class="pill">NVIDIA BioNeMo</span>
+            <span class="pill">ISIC SOTA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section A: Clinical & Pharma -->
+    <section class="section" id="clinical">
+      <div class="kicker">Section A</div>
+      <h2>Clinical & Pharmaceutical AI</h2>
+      <div class="table-wrap" role="region" aria-label="Clinical & Pharmaceutical AI table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Domain</th>
+              <th scope="col">Leading AI Systems</th>
+              <th scope="col">What They Excel At</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Clinical reasoning &amp; DDx</strong></td>
+              <td>AMIE; Med-Gemini / MedLM; Med-PaLM 2</td>
+              <td>Physician-grade differential diagnosis; multi-modal case analysis</td>
+            </tr>
+            <tr>
+              <td><strong>Ops automation (non-diagnostic)</strong></td>
+              <td>Hippocratic AI</td>
+              <td>Patient outreach; triage calls; chronic-care follow-ups; safety &amp; compliance</td>
+            </tr>
+            <tr>
+              <td><strong>Drug discovery &amp; molecular design</strong></td>
+              <td>AlphaFold 3; NVIDIA BioNeMo</td>
+              <td>Protein–ligand / nucleic-acid interaction prediction; accelerated preclinical R&amp;D</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Best Pick — DDx</h3>
+          <p class="muted">AMIE for assistant-style differential diagnosis.</p>
+        </div>
+        <div class="card">
+          <h3>Best Pick — R&amp;D</h3>
+          <p class="muted">AlphaFold 3 + BioNeMo for structure &amp; interaction design.</p>
+        </div>
+        <div class="card">
+          <h3>Best Pick — Ops</h3>
+          <p class="muted">Hippocratic AI for compliant patient communication at scale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Herbal / TCM -->
+    <section class="section" id="tcm">
+      <div class="kicker">Section B</div>
+      <h2>Herbal Medicine & Traditional Medicine (TCM) AI</h2>
+
+      <div class="grid">
+        <details class="accordion">
+          <summary>Model Choices</summary>
+          <div class="content">
+            <p><strong>General LLMs</strong> (GPT-4o / Qwen 2.5 Max / Doubao 1.5 Pro) show the strongest performance on real-case TCM tasks to date.</p>
+            <p><strong>Domain models</strong> (TCM-GPT, HuatuoGPT, ShenNong-TCM) suit custom tuning, protocols, and institutional knowledge.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>Safety Stack</summary>
+          <div class="content">
+            <p>Combine an LLM + <em>RAG</em> over pharmacopeias + a <em>herb–drug interaction knowledge graph</em> to surface contraindications, ADR warnings, and dosage checks with citations.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>Typical Flow</summary>
+          <div class="content">
+            <ol>
+              <li>Intake & symptoms ⇢ TCM pattern identification</li>
+              <li>Candidate formula suggestion</li>
+              <li>Herb–drug interaction & contraindication check</li>
+              <li>Clinician review & finalization</li>
+            </ol>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Section C: Dermatology -->
+    <section class="section" id="derm">
+      <div class="kicker">Section C</div>
+      <h2>Dermatology AI</h2>
+
+      <div class="table-wrap" role="region" aria-label="Dermatology AI table" tabindex="0">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Application</th>
+              <th scope="col">Leading Solutions</th>
+              <th scope="col">Status / Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Skin-cancer triage (Primary Care)</strong></td>
+              <td>DermaSensor</td>
+              <td><span class="badge ok">FDA De Novo</span> high-sensitivity triage supporting referral/biopsy decisions</td>
+            </tr>
+            <tr>
+              <td><strong>System-level triage (UK/EU)</strong></td>
+              <td>Skin Analytics – DERM</td>
+              <td>Deployed in <strong>NHS</strong> urgent cancer pathways; rule-out benign to reduce wait times</td>
+            </tr>
+            <tr>
+              <td><strong>Inflammatory dermatoses</strong></td>
+              <td>ISIC SOTA + clinical datasets</td>
+              <td>Assistive mode; standardize imaging; mitigate skin-tone bias (Fitzpatrick I–VI)</td>
+            </tr>
+            <tr>
+              <td><strong>Consumer tools</strong></td>
+              <td>Lens / DermAssist style</td>
+              <td>Education & search only — <span class="badge warn">not diagnosis</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid cols-3" style="margin-top:12px">
+        <div class="card"><h3>Primary Care</h3><p class="muted">Deploy DermaSensor with clear referral thresholds.</p></div>
+        <div class="card"><h3>Health Systems</h3><p class="muted">Integrate DERM into urgent pathways, QA with audits.</p></div>
+        <div class="card"><h3>Custom Classifier</h3><p class="muted">Start from ISIC SOTA; fine-tune on local data; assistive UX.</p></div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section" id="roadmap">
+      <div class="kicker">Deployment</div>
+      <h2>Implementation Roadmap</h2>
+
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Data & Governance</h3>
+          <p class="muted">Curated datasets, dermatologist/physician review loops, bilingual EN/VI, consent & audit.</p>
+        </div>
+        <div class="card">
+          <h3>Safety & Evaluation</h3>
+          <p class="muted">Guardrails, explainability, calibration & uncertainty; local population validation.</p>
+        </div>
+        <div class="card">
+          <h3>Regulatory</h3>
+          <p class="muted">Start as decision-support; align with FDA/CE/NICE pathways.</p>
+        </div>
+        <div class="card">
+          <h3>Architecture</h3>
+          <div class="code">Image/Text Intake → Preprocessing/QC → Multi-model Engine → RAG (Guidelines + Pharmacopoeia + Herb–Drug KG) → Risk Scoring + Clinical Suggestions + Audit Logs</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact">
+      <details class="accordion">
+        <summary>Need a branded version (logo, colors) or Vietnam regulatory slide?</summary>
+        <div class="content">We can tailor the palette, add your logo, and append market/regulatory specifics (VN + international) upon request.</div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 — One-page prepared for pitch & technical briefing. Save as PDF via the top button.
+  </footer>
+</body>
+</html>
