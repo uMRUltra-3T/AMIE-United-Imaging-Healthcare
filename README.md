@@ -126,4 +126,9 @@ You may build **your own systems** under the rights granted by this Certificate.
 > - Catalog Page (owners only): `<YOUR_LINK_HERE>`
 > - Symposium & Visits Info: `<YOUR_LINK_HERE>`
 
+---
+
+## Disclaimer
+
+This README is an English translation and program-ready summary of the uMRUltra-3T terms provided by the organizers. In case of ambiguity or conflict, the official program terms and certificate documents control. Participation is at the organization’s discretion and risk, subject to verification, compliance checks, and revocation for any violation.
 
