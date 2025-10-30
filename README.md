@@ -1,4 +1,4 @@
-[img]https://www.unite.ai/wp-content/uploads/2024/12/Tactile-Robots.webp[/img]
+![screenshot](https://www.unite.ai/wp-content/uploads/2024/12/Tactile-Robots.webp)
 
 # uMRUltra-3T — Access & Certification Program
 
